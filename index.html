@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <link href="weather-stylesheet.css" rel="stylesheet" type="text/css">
+
+    <title>Weather App</title>
+</head>
+<body>
+    
+    <!--For input-->
+    <div id="inputContainer">
+        <input id="inputField" type="text" value="" placeholder="Enter a location">
+        <button id="button" onclick="getWeather()">Check Weather</button>        
+    </div>
+
+    <!--Spinner for loading-->
+    <div class="loader"></div>
+
+    <!--Error-->
+    <div id="errorDisplay" style="display: none">
+        Error. Please refresh the page.
+      </div>
+    
+    <!--Weather data-->  
+    <div id="displayContainer">
+
+        <div id="regionDisplay"></div><br>
+        <div id="tempDisplay"></div>
+        <div id="windDisplay"></div>
+        <div id="descriptionDisplay"></div>
+        <div id="forecastContainer"><br><br>  <!--Forecast contains weather data for the next 3 days-->
+            <div id="forecast1Display"></div><br>
+            <div id="forecast2Display"></div><br>
+            <div id="forecast3Display"></div>
+        </div>
+
+    </div>
+    
+<script src="weather-app.js"></script>
+    
+</body>
+</html>
