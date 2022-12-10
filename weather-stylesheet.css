@@ -1,13 +1,38 @@
 /*Stylesheet for weather app*/
 
+:root {
+	--gradient:  linear-gradient(
+		90deg,
+		#9568de,
+		#686cde,
+		#c95d9a,
+		#ff9671,
+		#e6d260,
+		#b9e66c,
+		#6ce6b1,
+		#6cc3e6,
+		#6c82e6
+	);
+}
+
 body{
+    background-image: var(--gradient);
+	background-size: 400%;
+	animation:  bg-animation 30s infinite alternate;
+    /*
     background-image: linear-gradient(lightblue, cyan);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
+    */
     font-weight: bold;   
     text-shadow: 2px 2px 5px white;         
+}
+
+@keyframes bg-animation {
+	0% {background-position:  left}
+	100% {background-position:  right}
 }
 
 button{
