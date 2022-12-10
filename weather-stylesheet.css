@@ -17,7 +17,7 @@
 
 body{
     background-image: var(--gradient);
-    /*background-size: 400%;*/
+    background-size: 400%;
     /*
     background-image: linear-gradient(lightblue, cyan);
     background-repeat: no-repeat;
