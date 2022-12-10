@@ -17,8 +17,7 @@
 
 body{
     background-image: var(--gradient);
-	background-size: 400%;
-	animation:  bg-animation 30s infinite alternate;
+    /*background-size: 400%;*/
     /*
     background-image: linear-gradient(lightblue, cyan);
     background-repeat: no-repeat;
@@ -27,7 +26,8 @@ body{
     background-attachment: fixed;
     */
     font-weight: bold;   
-    text-shadow: 2px 2px 5px white;         
+    text-shadow: 2px 2px 5px white;
+    animation:  bg-animation 30s infinite alternate;
 }
 
 @keyframes bg-animation {
